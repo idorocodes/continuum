@@ -31,20 +31,8 @@ The system operates as a single deterministic pipeline with feedback: each swap 
 
 The protocol is implemented as a single on-chain program with tightly coupled but logically separated modules:
 
-```
-User → Swap Transaction
-       ↓
-Condition Logic (4.1) → Liquidity Manager (4.2) → Continuum Core (4.3)
-       ↓                                          ↓
-       ←────────────────────────────────────────────
-                  Observation Logic (4.4)
-                            ↓
-                     Policy Logic (4.5)
-                            ↓
-               Future Liquidity Configuration
-```
 
-(Refer to the included architecture diagram for detailed data flows.)
+<a href="https://ibb.co/Qv632dYT"><img src="https://i.ibb.co/v4J67YLT/file-00000000c9a4722fa69576c0b75834b8.png" alt="file-00000000c9a4722fa69576c0b75834b8" border="0"></a>
 
 ## Comparison with Traditional AMMs
 
